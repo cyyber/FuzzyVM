@@ -19,10 +19,10 @@ package precompiles
 import (
 	"crypto/ecdsa"
 
-	"github.com/rgeraldes24/goevmlab/program"
 	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/crypto"
+	"github.com/theQRL/gozvmlab/program"
 )
 
 var ecdsaAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000001")

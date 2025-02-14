@@ -19,9 +19,9 @@ package precompiles
 import (
 	"encoding/binary"
 
-	"github.com/rgeraldes24/goevmlab/program"
 	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
+	"github.com/theQRL/gozvmlab/program"
 )
 
 var bigModExpAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000005")

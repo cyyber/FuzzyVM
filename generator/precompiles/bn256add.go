@@ -17,10 +17,10 @@
 package precompiles
 
 import (
-	"github.com/rgeraldes24/goevmlab/program"
 	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/go-zond/common"
 	"github.com/theQRL/go-zond/crypto/bn256"
+	"github.com/theQRL/gozvmlab/program"
 )
 
 var bn256addAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000006")

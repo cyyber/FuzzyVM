@@ -28,7 +28,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rgeraldes24/goevmlab/fuzzing"
 	"github.com/theQRL/FuzzyVM/filler"
 	"github.com/theQRL/FuzzyVM/generator"
 	"github.com/theQRL/go-zond/common"
@@ -36,6 +35,7 @@ import (
 	"github.com/theQRL/go-zond/core/vm"
 	"github.com/theQRL/go-zond/tests"
 	"github.com/theQRL/go-zond/zond/tracers/logger"
+	"github.com/theQRL/gozvmlab/fuzzing"
 	"golang.org/x/crypto/sha3"
 )
 
