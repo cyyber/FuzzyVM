@@ -25,7 +25,7 @@ import (
 	"github.com/theQRL/go-zond/crypto/bn256"
 )
 
-var bn256pairingAddr = common.HexToAddress("0x8")
+var bn256pairingAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000008")
 
 type bn256PairingCaller struct{}
 

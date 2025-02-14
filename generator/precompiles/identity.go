@@ -22,7 +22,7 @@ import (
 	"github.com/theQRL/go-zond/common"
 )
 
-var identityAddr = common.HexToAddress("0x4")
+var identityAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000004")
 
 type identityCaller struct{}
 

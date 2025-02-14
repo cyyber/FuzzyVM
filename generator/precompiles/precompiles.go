@@ -28,13 +28,11 @@ var (
 	precompiles = []precompile{
 		new(ecdsaCaller),
 		new(sha256Caller),
-		new(ripemdCaller),
 		new(identityCaller),
 		new(bigModExpCaller),
 		new(bn256Caller),
 		new(bn256MulCaller),
 		new(bn256PairingCaller),
-		new(blake2fCaller),
 	}
 )
 
@@ -53,7 +51,7 @@ type CallObj struct {
 	OutSize   uint32
 }
 
-// CallRandomizer calls an address either with the CALL, CALLCODE or STATICCALL opcode.
+// CallRandomizer calls an address either with the CALL or STATICCALL opcode.
 func CallRandomizer(p *program.Program, f *filler.Filler, c CallObj) {
 	// modify call object
 	switch f.Byte() % 25 {
@@ -67,12 +65,10 @@ func CallRandomizer(p *program.Program, f *filler.Filler, c CallObj) {
 		c.OutSize = uint32(f.MemInt().Uint64())
 	}
 
-	switch f.Byte() % 3 {
+	switch f.Byte() % 2 {
 	case 0:
 		p.Call(c.Gas, c.Address, c.Value, c.InOffset, c.InSize, c.OutOffset, c.OutSize)
 	case 1:
-		p.CallCode(c.Gas, c.Address, c.Value, c.InOffset, c.InSize, c.OutOffset, c.OutSize)
-	case 2:
 		p.StaticCall(c.Gas, c.Address, c.InOffset, c.InSize, c.OutOffset, c.OutSize)
 	}
 }

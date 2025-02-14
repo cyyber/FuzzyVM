@@ -25,7 +25,7 @@ import (
 	"github.com/theQRL/go-zond/crypto"
 )
 
-var ecdsaAddr = common.HexToAddress("0x1")
+var ecdsaAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000001")
 
 type ecdsaCaller struct{}
 

@@ -1,12 +1,12 @@
 module github.com/theQRL/FuzzyVM
 
-go 1.21
+go 1.22
 
-toolchain go1.21.5
+toolchain go1.22.6
 
 require (
 	github.com/korovkin/limiter v0.0.0-20230307205149-3d4b2b34c99d
-	github.com/rgeraldes24/goevmlab v0.0.0-20240814164028-e72145bd7218
+	github.com/rgeraldes24/goevmlab v0.0.0-20241118075001-b9908d7d2e54
 	github.com/theQRL/go-zond v0.1.1
 	github.com/urfave/cli/v2 v2.27.1
 	golang.org/x/crypto v0.18.0
@@ -74,4 +74,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/theQRL/go-zond => github.com/rgeraldes24/go-zond v0.0.0-20240329100529-616c74c8ae60
+replace github.com/theQRL/go-zond => github.com/rgeraldes24/go-zond v0.0.0-20241117145719-5b35e450b184

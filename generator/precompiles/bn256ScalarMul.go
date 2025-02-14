@@ -23,7 +23,7 @@ import (
 	"github.com/theQRL/go-zond/crypto/bn256"
 )
 
-var bn256mulAddr = common.HexToAddress("0x7")
+var bn256mulAddr, _ = common.NewAddressFromString("Z0000000000000000000000000000000000000007")
 
 type bn256MulCaller struct{}
 
