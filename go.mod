@@ -7,7 +7,7 @@ toolchain go1.22.6
 require (
 	github.com/korovkin/limiter v0.0.0-20230307205149-3d4b2b34c99d
 	github.com/theQRL/go-zond v0.1.1
-	github.com/theQRL/gozvmlab v0.0.0-20250214110241-752b2391ad8a
+	github.com/theQRL/gozvmlab v0.0.0-20250214180526-fa0574ea7bf7
 	github.com/urfave/cli/v2 v2.27.1
 	golang.org/x/crypto v0.18.0
 )
@@ -74,4 +74,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace github.com/theQRL/go-zond => github.com/theQRL/go-zond v0.0.0-20250214095728-e6d949e278be
+replace github.com/theQRL/go-zond => github.com/theQRL/go-zond v0.0.0-20250214175148-2939fb6f666c
